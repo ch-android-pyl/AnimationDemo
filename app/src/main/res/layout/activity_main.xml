@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--设置imageview背景 动画需要调用start-->
+    <ImageView
+        android:id="@+id/iv_anim_run"
+        android:layout_width="75dp"
+        android:layout_height="95dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/anim_drawable_run" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/view"
+        android:layout_alignParentBottom="true"
+        android:text="开始动画" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/view"
+        android:layout_alignParentBottom="true"
+        android:text="停止" />
+</RelativeLayout>
